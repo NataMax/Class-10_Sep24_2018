@@ -39,7 +39,7 @@ treatment <- exprs(gse[,c("GSM15785", "GSM15786", "GSM15787", "GSM15788", "GSM15
 
 treatment <- exprs(gse[,1:5]) #better way because you don't need the column labels and names
 
-control <- exprs(gse[,6-10])
+control <- exprs(gse[,6:10])
 #you need the comma before six because you need columns not rows. 
 
 
