@@ -89,7 +89,7 @@ write.csv(fold, file="class_assignment_fold.csv", row.names=FALSE) # ?????
                     
 Means <- matrix(nrow=nrow(exprs(gse)), ncol=1)
 k=nrow(exprs(gse))
-for (j in 1:k)he
+for (j in 1:k)
 {
 Means[j,1] <- mean(exprs(gse)[c(j),])
 }
@@ -97,7 +97,7 @@ head(Means)
 
                   # Second way with names of genes
 k=nrow(exprs(gse))
-for (j in 1:k)he
+for (j in 1:k)
 {
 Means1[c(j)] <- mean(exprs(gse)[c(j),])
 }
